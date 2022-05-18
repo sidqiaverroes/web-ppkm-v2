@@ -2,20 +2,13 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-h1{
+h1, h2, h3, h4, h5, h6{
   font-weight: bold;
-  color: #422E83;
-}
-
-h2, h3, h5{
-  font-weight: bold;
-  color: white;
 }
 
 p{
   font-size: 1rem;
   font-weight: 300;
-  color: #422E83;
 }
 
 a.btn-yellow{
@@ -24,6 +17,24 @@ a.btn-yellow{
   appearance: button;
   text-decoration: none;
 }
+
+/* CONTAINER & SECTION */
+.container{
+  width: min(100%, 1920px);
+}
+
+.section-gradient{
+  background-image: linear-gradient(to right top, #422E83, #FDB137 125%);
+  color: white;
+  padding : 8rem 12% 8rem; /* top left-right bottom */
+}
+
+.section-white{
+  background-color: white;
+  color: #422E83;
+  padding : 8rem 12% 8rem;
+}
+/* CONTAINER & SECTION */
 
 /* BUTTON */
 .btn-yellow{
@@ -64,22 +75,18 @@ a.btn-yellow{
 /* BUTTON */
 
 /* SCROLLBAR */
-/* width */
 ::-webkit-scrollbar {
   width: 14px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #422E83;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #624DA9;
 }
@@ -98,7 +105,6 @@ a.btn-yellow{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(66, 46, 131, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .custom-toggler.navbar-toggler {
-  /* border-color: #422E83; */
   color: #422E83;
 }
 
@@ -113,36 +119,20 @@ a.btn-yellow{
 /* NAVBAR */
 
 /* HERO */
-.section-hero{
-  /* background-color: #422E83; */
-  background-image: linear-gradient(to right top, #422E83, #FDB137 125%);
-  color: white;
-  padding : 10% 12% 20%; /*top left-right bottom*/
-}
-
 .hero-title{
   margin-top: 10%;
-  color: white;
-}
-
-.hero-paragraph{
-  color: white;
 }
 
 .hero-image{
-  width: 40%;
+  width: 100%;
   height: auto;
-  position: absolute;
-  right: 4rem;
-  bottom: 1rem;
+  position: relative;
+  /* right: 4rem;
+  bottom: 1rem; */
 }
 /* HERO */
 
 /* ABOUT US */
-.section-about-us{
-  padding : 10% 12% 0; /*top left-right bottom*/
-}
-
 .about-us-image{
   width: 80%;
   height: auto;
@@ -161,20 +151,14 @@ a.btn-yellow{
 /* ABOUT US */
 
 /* FEATURED NEWS */
-.section-featured-news{
-  background-image: linear-gradient(to right top, #422E83, #FDB137 125%);
-  padding : 8% 12% 12%;
+.featured-news-title{
+  margin-bottom: 4rem;
   text-align: center;
 }
 
-.featured-news-title{
-  margin-bottom: 4rem;
-  color: white;
-}
-
 .featured-news-link{
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 .featured-news-link:hover{
@@ -191,8 +175,7 @@ a.btn-yellow{
 /* FEATURED NEWS */
 
 /* LOGO & MASCOT */
-.section-logo-mascot{
-  padding : 0 12% 10%;
+.logo-mascot-title{
   text-align: center;
 }
 
@@ -220,7 +203,7 @@ a.btn-yellow{
 
 /* EVENTS */
 .section-events{
-  padding : 10% 12% 20%;
+  padding : 8rem 12% 8rem;
   text-align: center;
 }
 
@@ -244,7 +227,7 @@ a.btn-yellow{
 /* FOOTER */
 .section-footer{
   background-image: linear-gradient(to right top, #422E83, #FDB137 125%);
-  padding : 7% 12% 7%;
+  padding : 8rem 12% 8rem;
 }
 
 .footer-title{
@@ -285,8 +268,6 @@ a.btn-yellow{
   .hero-image{
     width: 75%;
     height: auto;
-    position: relative;
-    left: 0.25rem;
   }
 
   .footer-title{
