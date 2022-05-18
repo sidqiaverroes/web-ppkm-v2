@@ -19,39 +19,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+  <!-- Animation Library : AOS css-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-  <section>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg nav-ppkm">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="/images/logo-ppkm.png" alt"Logo PPKM" width="auto" height="36">
-        </a>
-        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav ms-auto" style="margin-right: 16px;">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about-us">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#featured-news">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Event">Events</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Navbar -->
+  <nav class="autohide navbar navbar-expand-lg nav-ppkm shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/images/logo-ppkm.png" alt"Logo PPKM" width="auto" height="36">
+      </a>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto" style="margin-right: 16px;">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured-news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Event">Events</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Navbar -->
+    </div>
+  </nav>
+  <!-- Navbar -->
 
+  <section>
     <!-- Hero -->
     <div id="hero" class="container-fluid section-gradient">
       <div class="container">
@@ -59,11 +61,12 @@
           <div class="col-lg-6">
             <h1 class="hero-title">PENGEMBANGAN POTENSI DAN KARYA MAHASISWA</h1>
             <p class="lead">Kementerian Pengembangan Potensi dan Karya Mahasiswa adalah lorem ipsum dolor sit amet.</p>
-            <a class="btn-yellow" href="https://www.instagram.com/kreasiugm/" target="_blank" rel="noopener noreferrer">Learn more</a>
+            <a class="btn-yellow on-top" href="https://www.instagram.com/kreasiugm/" target="_blank" rel="noopener noreferrer">Learn more</a>
           </div>
           <div class="col-lg-6">
             <img src="/images/mascot.png" class="hero-image" alt="">
           </div>
+          <img class="ornament" src="/images/cloud-left.svg" alt"...">
         </div>
       </div>
     </div>
@@ -73,7 +76,7 @@
   <section>
     <!-- About Us -->
     <div id="about-us" class="container-fluid section-white">
-      <div class="container">
+      <div class="container"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
         <div class="row">
           <div class="col-lg-6">
             <div class="logo">
@@ -99,7 +102,7 @@
   <section>
     <!-- Logo and Mascot -->
     <div class="container-fluid section-white">
-      <div class="container">
+      <div class="container"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
         <div class="row logo-mascot-title">
 
           <div class="col-lg-6">
@@ -135,7 +138,7 @@
   <section>
     <!-- Featured News -->
     <div id="featured-news" class="container-fluid section-gradient">
-      <div class="container">
+      <div class="container"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
         <div class="row">
           <h1 class="featured-news-title">
             FEATURED NEWS |
@@ -180,7 +183,7 @@
   <section>
     <!-- Events -->
     <div id="Event" class="container-fluid section-white">
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
         <div class="row">
           <h1 class="events-title">Events</h1>
           <div class="col-lg-2">
@@ -234,6 +237,11 @@
   <!-- Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="index.js" charset="utf-8"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
